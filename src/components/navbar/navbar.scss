@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    gap: 100px;
+
+    .right {
+      display: flex;
+      .ulList {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        @media screen and (max-width: 647px) {
+          display: none;
+        }
+
+        .Link {
+          text-decoration: none;
+          background: #fff;
+          li {
+            margin: 20px 10px;
+            color: #788;
+          }
+          .lastLi {
+            margin-right: 0;
+            background: #c5b6b635;
+            padding: 10px;
+            border-radius: 10px;
+
+            width: 130px;
+          }
+        }
+      }
+      .addCross {
+        // background: yellow;
+
+        .addCrossUl {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 40px;
+          right: -28px;
+          background: #fff;
+          width: 99.5vw;
+          height: 40vh;
+          z-index: 6;
+          list-style: none;
+          box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+
+          .Link {
+            text-decoration: none;
+            background: #fff;
+            li {
+              margin: 20px 10px;
+              color: #788;
+            }
+            .lastLi {
+              margin-right: 0;
+              background: #c5b6b635;
+              padding: 10px;
+              border-radius: 10px;
+
+              width: 130px;
+            }
+          }
+        }
+      }
+      .cross-btn {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: 10;
+        @media screen and (max-width: 647px) {
+          display: flex;
+        }
+        .first {
+          width: 20px;
+          height: 2px;
+          background: #000;
+          margin-bottom: 5px;
+        }
+        .second {
+          width: 20px;
+          height: 2px;
+          background: #000;
+        }
+      }
+    }
+  }
+}

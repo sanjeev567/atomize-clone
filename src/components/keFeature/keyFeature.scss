@@ -1,0 +1,46 @@
+.key-feature {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+
+  .para {
+    button {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      transition: background-color 0.3s ease-in;
+      &:hover {
+        cursor: pointer;
+        background-color: #373535;
+      }
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      color: gray;
+    }
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    @media screen and (max-width: 990px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 647px) {
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+    }
+  }
+}

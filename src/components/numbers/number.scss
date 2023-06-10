@@ -1,0 +1,12 @@
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 56px 0;
+  @media screen and (max-width: 647px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+  }
+}
