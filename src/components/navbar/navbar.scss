@@ -13,6 +13,11 @@
 
     .right {
       display: flex;
+      max-height: 77%;
+      overflow: hidden;
+      padding: 10px;
+      background: transparent;
+      border-radius: 10px;
       .ulList {
         display: flex;
         align-items: center;
