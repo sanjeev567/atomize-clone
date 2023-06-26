@@ -53,7 +53,7 @@ const Navbar = () => {
                     transition: "transform .3s ease-in",
                   }
                 : {
-                    transform: "rotate(45deg) translate(-4px, -5px)",
+                    transform: "rotate(45deg) translate(-5px, -5px)",
                     transition: "transform .3s ease-in",
                   }
             }
