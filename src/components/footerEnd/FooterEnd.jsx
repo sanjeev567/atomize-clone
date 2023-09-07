@@ -5,7 +5,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 const FooterEnd = () => {
   return (
     <div className="footerEnd">
-      <p>Designed & Developed by Proksh Luthra</p>
+      <p>Designed & Developed by Sanjeev Singh</p>
       <div className="icons">
         <GitHubIcon />
         <LinkedInIcon />
